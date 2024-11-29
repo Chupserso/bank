@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#009FDF;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{mask:url(#mask-2_00000170963065092246529140000001988912636937261485_);fill-rule:evenodd;clip-rule:evenodd;fill:#0A2973;}
+</style>
+<g>
+	<circle class="st0" cx="50.99" cy="50.34" r="40.77"/>
+	<g id="vtb_ru">
+		<g id="Group-6">
+			<g id="Group-Copy">
+				<g id="Group-2">
+					<path id="Fill-1" class="st1" d="M21.45,38.15l-1.16,3.19h16.14l1.16-3.19H21.45z M19.7,42.93l-1.16,3.19h16.14l1.16-3.19H19.7
+						z M17.96,47.72l-1.16,3.19h16.14l1.16-3.19H17.96z"/>
+					<g id="Clip-3">
+					</g>
+					<defs>
+						<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="41.01" y="43" width="44.18" height="19.54">
+							<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+						</filter>
+					</defs>
+					
+						<mask maskUnits="userSpaceOnUse" x="41.01" y="43" width="44.18" height="19.54" id="mask-2_00000170963065092246529140000001988912636937261485_">
+						<g class="st2">
+							<polygon id="path-1_00000131331651110074797770000011963508053465094321_" class="st0" points="41.01,62.54 85.19,62.54 
+								85.19,43 41.01,43 							"/>
+						</g>
+					</mask>
+					<path id="Fill-2" class="st3" d="M51.11,52.12v0.07c0.74,0.27,1.44,0.74,1.81,1.05c1.14,0.95,1.64,2.2,1.64,3.82
+						c0,2.67-1.41,4.6-3.72,5.21c-0.7,0.2-1.44,0.27-2.82,0.27h-7.01V43h6.21c1.27,0,2.15,0.07,2.92,0.27
+						c2.25,0.61,3.72,2.16,3.72,4.63c0,1.32-0.47,2.44-1.24,3.18C52.28,51.41,51.81,51.82,51.11,52.12z M44.9,54.19v5.14h2.68
+						c0.8,0,1.54-0.07,2.08-0.57c0.54-0.51,0.77-1.15,0.77-1.99c0-0.64-0.17-1.25-0.5-1.69c-0.57-0.71-1.27-0.88-2.48-0.88H44.9z
+						 M44.87,50.8h2.18c0.67,0,1.01,0,1.34-0.1c0.91-0.27,1.48-1.08,1.48-2.2c0-1.32-0.6-1.89-1.48-2.16
+						c-0.37-0.1-0.74-0.14-1.48-0.14h-2.05V50.8z M60.4,62.54V46.27h-5.6V43h15.57l-1.11,3.28h-4.97v16.26H60.4z M71.57,62.54V43
+						h12.61l-1.11,3.28h-7.65v4.33h3.12c2.52,0,3.82,0.61,4.73,1.39c0.7,0.61,1.91,1.96,1.91,4.63c0,2.64-1.24,4.09-2.28,4.83
+						c-1.21,0.84-2.48,1.08-5.07,1.08H71.57z M75.43,59.26h2.92c1.11,0,1.78-0.27,2.25-0.88c0.23-0.3,0.57-0.85,0.57-1.86
+						c0-1.01-0.34-1.72-1.01-2.23c-0.4-0.3-0.94-0.47-1.85-0.47h-2.88V59.26z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

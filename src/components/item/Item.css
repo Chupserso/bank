@@ -1,0 +1,22 @@
+.item {
+    max-width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.item-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+.day {
+    font-size: 20px;
+    font-weight: 600;
+}
+.final-money {
+    color: #797979;
+    font-weight: 600;
+    font-size: 20px;
+}

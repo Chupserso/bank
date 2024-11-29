@@ -1,0 +1,71 @@
+.main-header {
+    background: rgb(248, 227, 236);
+    padding: 10px;
+    padding-bottom: 0;
+}
+.phone {
+    width: 550px;
+    min-width: 500px;
+    max-width: 590px;
+    min-height: 900px;
+    background: rgb(241, 241, 241);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.phone::-webkit-scrollbar {
+    width: 10px;               /* ширина всей полосы прокрутки */
+}
+
+.phone::-webkit-scrollbar-track {
+    background: #fff;        /* цвет зоны отслеживания */
+}
+
+.phone::-webkit-scrollbar-thumb {
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+}
+.profile {
+    width: 70px;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.search input {
+    background: #dedede;
+    width: 80%;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    color: #4b4b4b;
+}
+.search input::placeholder {
+    color: #4b4b4b;
+}
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #dedede;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.wrapper {
+    padding: 10px;
+    padding-top: 5px;
+}
+.filter img {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 13px;
+}

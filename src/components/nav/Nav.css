@@ -1,0 +1,31 @@
+.nav {
+    margin-top: -10px;
+    background: #fff;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one {
+    margin-top: 390px;
+}
+.twos {
+    margin-top: 300px;
+}
+.img img {
+    width: 50px;
+}
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text {
+    color: #ADADAD;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.last {
+    color: #109227;
+}
