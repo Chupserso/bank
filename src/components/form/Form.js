@@ -52,7 +52,7 @@ export const Form = (props) => {
         const updatedDays = data.days.map((d) => {
             if (d.day === selectedDay) {
                 const newSubItem = { id: id, title: subTitle, subSubTitle: subSubTitle, sum: subSum, img: subImage, color: color };
-                return { ...d, subItems: [...(d.subItems || []), newSubItem] };
+                return { ...d, subItems: [newSubItem, ...(d.subItems || [])] };
             }
             return d;
         });
