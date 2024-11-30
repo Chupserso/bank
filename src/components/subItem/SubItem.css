@@ -4,7 +4,7 @@
     align-items: start;
 }
 .infos {
-    margin-left: 10px;
+    margin-left: -55px;
 }
 .logo img {
     width: 50px;
@@ -40,7 +40,7 @@
     justify-content: space-between;
 }
 hr {
-    margin-left: 10px;
+    margin-left: -55px;
     border: 1px solid #e0e0e0;
     margin-top: 20px;
 }
