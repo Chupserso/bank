@@ -2,8 +2,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
 }
 .form input {
     margin-top: 10px;
@@ -33,4 +32,33 @@ input::placeholder {
 }
 select {
     border: 1px solid #000;
+}
+.day-form {
+    display: flex;
+    flex-direction: column;
+}
+.sub-form {
+    display: flex;
+    flex-direction: column;
+}
+.sub-form input {
+    height: 30px;
+}
+.sub-form button {
+    height: 40px;
+}
+.sub-form select {
+    height: 30px;
+}
+.edit-forms {
+    display: flex;
+    flex-direction: column;
+}
+.filtrs-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-phone {
+    display: flex;
+    flex-direction: column;
 }

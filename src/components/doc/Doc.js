@@ -2,10 +2,11 @@ import sberImg from "../../images/sberbank.logo_icon.svg";
 import signImg from "../../images/podp.png";
 import geoImg from "../../images/mesto.png";
 import phoneImg from "../../images/phone.png";
+import "./Doc.css";
 
 export const Doc = ({documentContent, handleInputChange}) => {
     return (
-        <>
+        <div className="doc-wrap">
                     <h1>Документ</h1>
             <div className="document">
                 <div className="doc">
@@ -78,6 +79,6 @@ export const Doc = ({documentContent, handleInputChange}) => {
                     </label>
                 ))}
             </form>
-        </>
+        </div>
     );
 }

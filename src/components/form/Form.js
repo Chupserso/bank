@@ -189,31 +189,36 @@ export const Form = (props) => {
 
     return (
         <div className="form">
-            <label>Создание дня</label>
-            <input
-                type="text"
-                value={day}
-                onChange={(e) => setDay(e.target.value)}
-                placeholder="День недели"
-            />
-            <input
-                type="text"
-                value={sum}
-                onChange={(e) => setSum(e.target.value)}
-                placeholder="Итоговая сумма"
-            />
-            <input type="submit" onClick={createDay} value="Создать" />
-            <br />
-            <br />
-            <label>Удаление дня</label>
-            <input
-                type="text"
-                value={dayDel}
-                onChange={(e) => setDayDel(e.target.value)}
-                placeholder="День недели"
-            />
-            <input type="submit" onClick={deleteDay} value="Удалить" />
-            <br />
+            <div className="day-form">
+                <label>Создание дня</label>
+                <input
+                    type="text"
+                    value={day}
+                    onChange={(e) => setDay(e.target.value)}
+                    placeholder="День недели"
+                />
+                <input
+                    type="text"
+                    value={sum}
+                    onChange={(e) => setSum(e.target.value)}
+                    placeholder="Итоговая сумма"
+                />
+                <input type="submit" onClick={createDay} value="Создать" />
+                <br />
+                <br />
+                <label>Удаление дня</label>
+                <input
+                    type="text"
+                    value={dayDel}
+                    onChange={(e) => setDayDel(e.target.value)}
+                    placeholder="День недели"
+                />
+                <input type="submit" onClick={deleteDay} value="Удалить" />
+                <br />
+            </div>
+
+
+            <div className="sub-form">
             <h2>Создание Элементов внутри дней</h2>
             <select onChange={(e) => setSelectedDay(e.target.value)} value={selectedDay}>
                 <option value="">Выберите день</option>
@@ -324,97 +329,101 @@ export const Form = (props) => {
                 )}
                 </div>
             <br />
-            <div>{forms}</div>
+            </div>
+            <div className="edit-forms">{forms}</div>
             <br />
-            <label>Фильтр 1</label>
-            <input
-                type="text"
-                value={filter1}
-                onChange={(e) => {
-                    localStorage.removeItem("filter1");
-                    localStorage.setItem("filter1", e.target.value);
-                    setFilter1(localStorage.getItem("filter1"));
-                }}
-                placeholder="Фильтр 1"
-            />
-            <br />
-            <label>Фильтр 2</label>
-            <input
-                type="text"
-                value={filter2}
-                onChange={(e) => {
-                    localStorage.removeItem("filter2");
-                    localStorage.setItem("filter2", e.target.value);
-                    setFilter2(localStorage.getItem("filter2"));
-                }}
-                placeholder="Фильтр 2"
-            />
-            <br />
-            <label>Фильтр 3</label>
-            <input
-                type="text"
-                value={filter3}
-                onChange={(e) => {
-                    localStorage.removeItem("filter3");
-                    localStorage.setItem("filter3", e.target.value);
-                    setFilter3(localStorage.getItem("filter3"));
-                }}
-                placeholder="Фильтр 3"
-            />
-                        <br />
-            <label>Батарея</label>
-            <input
-                type="number"
-                min="5"
-                max="100"
-                value={battery}
-                onChange={(e) => {
-                    localStorage.removeItem("battery");
-                    localStorage.setItem("battery", e.target.value);
-                    setBattery(localStorage.getItem("battery"));
-                }}
-                placeholder="Батарея"
-            />
-                        <br />
-            <label>Связь</label>
-            <input
-                type="number"
-                min={0}
-                max={4}
-                value={com}
-                onChange={(e) => {
-                    localStorage.removeItem("com");
-                    localStorage.setItem("com", e.target.value);
-                    setCom(localStorage.getItem("com"));
-                }}
-                placeholder="Связь"
-            />
-                        <br />
-            <label>Время</label>
-            <input
-                type="text"
-                value={time}
-                onChange={(e) => {
-                    localStorage.removeItem("time");
-                    localStorage.setItem("time", e.target.value);
-                    setTime(localStorage.getItem("time"));
-                }}
-                placeholder="Время"
-            />
-                        <br />
-            <label>Вай фай</label>
-            <input
-                type="number"
-                min={1}
-                max={3}
-                value={wifi}
-                onChange={(e) => {
-                    localStorage.removeItem("wifi");
-                    localStorage.setItem("wifi", e.target.value);
-                    setWifi(localStorage.getItem("wifi"));
-                }}
-                placeholder="Вай фай"
-            />
+            <div className="filtrs-form">
+                <label>Фильтр 1</label>
+                <input
+                    type="text"
+                    value={filter1}
+                    onChange={(e) => {
+                        localStorage.removeItem("filter1");
+                        localStorage.setItem("filter1", e.target.value);
+                        setFilter1(localStorage.getItem("filter1"));
+                    }}
+                    placeholder="Фильтр 1"
+                />
+                <br />
+                <label>Фильтр 2</label>
+                <input
+                    type="text"
+                    value={filter2}
+                    onChange={(e) => {
+                        localStorage.removeItem("filter2");
+                        localStorage.setItem("filter2", e.target.value);
+                        setFilter2(localStorage.getItem("filter2"));
+                    }}
+                    placeholder="Фильтр 2"
+                />
+                <br />
+                <label>Фильтр 3</label>
+                <input
+                    type="text"
+                    value={filter3}
+                    onChange={(e) => {
+                        localStorage.removeItem("filter3");
+                        localStorage.setItem("filter3", e.target.value);
+                        setFilter3(localStorage.getItem("filter3"));
+                    }}
+                    placeholder="Фильтр 3"
+                />
+            </div>
+            <div className="form-phone">
+                <label>Батарея</label>
+                <input
+                    type="number"
+                    min="5"
+                    max="100"
+                    value={battery}
+                    onChange={(e) => {
+                        localStorage.removeItem("battery");
+                        localStorage.setItem("battery", e.target.value);
+                        setBattery(localStorage.getItem("battery"));
+                    }}
+                    placeholder="Батарея"
+                />
+                            <br />
+                <label>Связь</label>
+                <input
+                    type="number"
+                    min={0}
+                    max={4}
+                    value={com}
+                    onChange={(e) => {
+                        localStorage.removeItem("com");
+                        localStorage.setItem("com", e.target.value);
+                        setCom(localStorage.getItem("com"));
+                    }}
+                    placeholder="Связь"
+                />
+                            <br />
+                <label>Время</label>
+                <input
+                    type="text"
+                    value={time}
+                    onChange={(e) => {
+                        localStorage.removeItem("time");
+                        localStorage.setItem("time", e.target.value);
+                        setTime(localStorage.getItem("time"));
+                    }}
+                    placeholder="Время"
+                />
+                            <br />
+                <label>Вай фай</label>
+                <input
+                    type="number"
+                    min={1}
+                    max={3}
+                    value={wifi}
+                    onChange={(e) => {
+                        localStorage.removeItem("wifi");
+                        localStorage.setItem("wifi", e.target.value);
+                        setWifi(localStorage.getItem("wifi"));
+                    }}
+                    placeholder="Вай фай"
+                />
+            </div>
         </div>
     );
 };
