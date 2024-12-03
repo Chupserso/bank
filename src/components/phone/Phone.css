@@ -1,5 +1,5 @@
 .main-header {
-    background: rgb(248, 227, 236);
+    background: #000;
     padding: 10px;
     padding-bottom: 0;
 }
@@ -8,7 +8,7 @@
     min-width: 500px;
     max-width: 590px;
     min-height: 900px;
-    background: rgb(241, 241, 241);
+    background: #000;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -33,9 +33,10 @@
     align-items: center;
 }
 .search input {
-    background: #dedede;
+    background: #161a1f;
     width: 80%;
     height: 40px;
+    padding: 0;
     padding-left: 15px;
     border: none;
     font-size: 17px;
@@ -43,7 +44,7 @@
     color: #4b4b4b;
 }
 .search input::placeholder {
-    color: #4b4b4b;
+    color: #808080;
 }
 .filters {
     width: 100%;
@@ -55,9 +56,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background: #dedede;
+    background: #161a1f;
     border-radius: 20px;
-    color: #000;
+    color: #fff;
     font-weight: 600;
 }
 .wrapper {

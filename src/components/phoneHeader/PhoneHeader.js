@@ -32,7 +32,7 @@ export const PhoneHeader = (props) => {
     }
 
     return (
-        <div className="header">
+        <div className="phone-header">
             <div className="time">{time}</div>
             <div className="icons">
                 <div className="signal">

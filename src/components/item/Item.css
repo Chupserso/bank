@@ -1,6 +1,6 @@
 .item {
     max-width: 100%;
-    background: #fff;
+    background: #161a1f;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 10px;
@@ -19,4 +19,7 @@
     color: #797979;
     font-weight: 600;
     font-size: 20px;
+}
+.day {
+    color: #fff;
 }
