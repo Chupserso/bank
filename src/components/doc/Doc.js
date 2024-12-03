@@ -7,7 +7,7 @@ import "./Doc.css";
 export const Doc = ({documentContent, handleInputChange}) => {
     return (
         <div className="doc-wrap">
-                    <h1>Документ</h1>
+            <h1>Документ</h1>
             <div className="document">
                 <div className="doc">
                     <div className="hat">
@@ -64,6 +64,9 @@ export const Doc = ({documentContent, handleInputChange}) => {
                     </div>
                     <div className="texsm">
                         <sup>1</sup> {documentContent.note}
+                    </div>
+                    <div className="texsm">
+                        <sup>2</sup> {documentContent.note2}
                     </div>
                 </div>
             </div>
