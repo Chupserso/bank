@@ -1,5 +1,5 @@
 import sberImg from "../../images/sberbank.logo_icon.png";
-import signImg from "../../images/podp.png";
+import signImg from "../../images/podp.jpg";
 import geoImg from "../../images/mesto.png";
 import phoneImg from "../../images/phone.png";
 import "./Doc.css";
