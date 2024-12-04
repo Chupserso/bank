@@ -1,14 +1,28 @@
-import sberImg from "../../images/sberbank.logo_icon.svg";
+import sberImg from "../../images/sberbank.logo_icon.png";
 import signImg from "../../images/podp.png";
 import geoImg from "../../images/mesto.png";
 import phoneImg from "../../images/phone.png";
 import "./Doc.css";
+import html2canvas from 'html2canvas';
+import { useRef } from "react";
 
 export const Doc = ({documentContent, handleInputChange}) => {
+    const ToCaptureRef = useRef();
+
+    const captureScreenshot = ( ) => { 
+        let canvasPromise = html2canvas ( ToCaptureRef . current , { 
+          useCORS : true  // в случае, если в вашем приложении хранятся изображения
+         }); 
+        canvasPromise. then ( ( canvas )=> { 
+          document . body . appendChild ( canvas ); 
+        }); 
+    }
+    
+
     return (
         <div className="doc-wrap">
             <h1>Документ</h1>
-            <div className="document">
+            <div className="document" ref={ToCaptureRef}>
                 <div className="doc">
                     <div className="hat">
                         <div className="log">
@@ -71,6 +85,7 @@ export const Doc = ({documentContent, handleInputChange}) => {
                 </div>
             </div>
             <h2>Редактирование текста</h2>
+            <button onClick={captureScreenshot}>Сделать скриншот</button>
             <form className="edit-form">
                 {Object.keys(documentContent).map((field) => (
                     <label key={field}>

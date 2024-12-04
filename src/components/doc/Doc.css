@@ -127,3 +127,8 @@
     margin: 0 auto;
     width: 1200px;
 }
+.doc-wrap button {
+    margin-left: 200px;
+    padding: 20px;
+    margin-bottom: 50px;
+}

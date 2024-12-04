@@ -236,7 +236,7 @@ export const Form = (props) => {
             />
             <label>Выбор цвета</label>
             <select onChange={(e) => setColor(e.target.value)} value={color}>
-                <option value="black">Black</option>
+                <option value="white">White</option>
                 <option value="green">Green</option>
                 <option value="gray">Gray</option>
             </select>
@@ -299,7 +299,7 @@ export const Form = (props) => {
 
                                     <label>Цвет:</label>
                                     <select onChange={(e) => updateSubItemField("color", e.target.value, sub.id)} value={sub.color}>
-                                        <option value="black">Black</option>
+                                        <option value="white">White</option>
                                         <option value="green">Green</option>
                                         <option value="gray">Gray</option>
                                     </select>
