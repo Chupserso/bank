@@ -14,7 +14,13 @@ export const Doc = ({documentContent, handleInputChange}) => {
           useCORS : true  // в случае, если в вашем приложении хранятся изображения
          }); 
         canvasPromise. then ( ( canvas )=> { 
-          document . body . appendChild ( canvas ); 
+          const dataUrl = canvas.toDataURL('image/png');
+          const link = document.createElement('a');
+          link.href = dataUrl;
+          link.download = 'скриншот.png';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link); 
         }); 
     }
     

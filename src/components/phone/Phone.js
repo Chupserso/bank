@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { PhoneHeader } from "../phoneHeader/PhoneHeader";
 import { Items } from "../items/Items";
 import { Nav } from "../nav/Nav";
