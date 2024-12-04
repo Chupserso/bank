@@ -28,12 +28,12 @@
     font-style: italic;
 }
 .text1 {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 50px;
 }
 .sformed {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -42,8 +42,8 @@
 }
 .sber-text {
     color: rgb(45 181 74);
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 24px;
 }
 .adresses {
     display: flex;
@@ -65,19 +65,21 @@
     margin-right: 5px;
 }
 .hat {
+    width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-bottom: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 .prg {
-    max-width: 600px;
+    max-width: 530px;
     margin-bottom: 50px;
     font-weight: 500;
-    margin-left: 125px;
+    margin-left: 95px;
+    line-height: 22px;
 }
 .text-b {
     margin-bottom: 15px;
@@ -95,7 +97,7 @@
     align-items: center;
 }
 .grid {
-    margin-left: 125px;
+    margin-left: 95px;
     width: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,19 +106,19 @@
 .footr {
     margin-top: 200px;
     display: flex;
-    margin-left: 125px;
+    margin-left: 95px;
     margin-bottom: 100px;
 }
 .sign img {
     width: 350px;
-    margin-left: 250px;
+    margin-left: 280px;
 }
 .texts {
     margin-top: 190px;
     font-weight: bold;
 }
 .texsm {
-    margin-left: 125px;
+    margin-left: 95px;
     max-width: 850px;
     margin-top: 180px;
 }
@@ -131,4 +133,7 @@
     margin-left: 200px;
     padding: 20px;
     margin-bottom: 50px;
+}
+.document {
+    font-size: 14px;
 }

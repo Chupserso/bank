@@ -65,6 +65,14 @@ export const Doc = ({documentContent, handleInputChange}) => {
                             <div className="bold">{documentContent.operationAmount}</div>
                         </div>
                         <div>
+                            <div className="text-b">Сумма в валюте операции<sup>2</sup></div>
+                            <div className="bold">{documentContent.operationAmount}</div>
+                        </div>
+                        <div>
+                            <div className="text-b">Тип операции</div>
+                            <div className="bold">{documentContent.typeOperation}</div>
+                        </div>
+                        <div>
                             <div className="text-b">Описание</div>
                             <div className="bold">{documentContent.operationDescription}</div>
                         </div>
