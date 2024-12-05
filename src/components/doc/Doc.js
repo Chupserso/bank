@@ -93,7 +93,7 @@ export const Doc = ({documentContent, handleInputChange}) => {
                     <div className="texsm">
                         <sup>1</sup> {documentContent.note}
                     </div>
-                    <div className="texsm">
+                    <div className="texsm lastt">
                         <sup>2</sup> {documentContent.note2}
                     </div>
                 </div>
