@@ -56,6 +56,9 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.wrap:last-child .wrap-item:last-child {
+    margin-top: 3px;
+}
 .wrap-item {
     display: flex;
     align-items: end;
@@ -75,7 +78,8 @@
     margin-bottom: 40px;
 }
 .prg {
-    max-width: 530px;
+    max-width: 540px;
+    font-size: 15px;
     margin-bottom: 50px;
     font-weight: 500;
     margin-left: 95px;
@@ -121,9 +125,10 @@
     margin-left: 95px;
     max-width: 710px;
     margin-top: 180px;
+    font-size: 13px;
 }
 .texsm:last-child {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .document {
     margin: 0 auto;
