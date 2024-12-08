@@ -269,18 +269,21 @@ export const Form = (props) => {
                 <label>Выберите день:</label>
                 <select onChange={(e) => setSelectedDay1(e.target.value)} value={selectedDay1}>
                     <option value="">Выберите день</option>
-                    {data.days.map((d) => (
-                        <option key={d.day} value={d.day}>
-                            {d.day}
-                        </option>
-                    ))}
+                    {data.days.map((d) => {
+                        if (d.subItems != undefined) {
+                            return (
+                                <option key={d.day} value={d.day}>
+                                    {d.day}
+                                </option>
+                            );
+                        }
+                    })}
                 </select>
 
                 {/* Редактирование SubItems */}
                 {selectedDay1 && (
                     <div>
-                        {data.days
-                            .find((d) => d.day === selectedDay1)
+                        {data.days.find((d) => d.day === selectedDay1)
                             ?.subItems.map((sub) => (
                                 <div key={sub.id} className="block">
                                     <label>Название:</label>
