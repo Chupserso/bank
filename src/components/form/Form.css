@@ -62,3 +62,9 @@ select {
     display: flex;
     flex-direction: column;
 }
+.day-item button {
+    margin: 0 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

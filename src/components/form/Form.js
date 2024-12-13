@@ -177,14 +177,40 @@ export const Form = (props) => {
         setData(newData);
     };
 
+    const moveDayUp = (index) => {
+        if (index === 0) return; // Первый элемент не может быть перемещён выше
+    
+        const updatedDays = [...data.days];
+        [updatedDays[index - 1], updatedDays[index]] = [updatedDays[index], updatedDays[index - 1]]; // Меняем местами
+    
+        const updatedData = { ...data, days: updatedDays };
+        localStorage.setItem("data", JSON.stringify(updatedData));
+        setData(updatedData);
+    };
+    
+    const moveDayDown = (index) => {
+        if (index === data.days.length - 1) return; // Последний элемент не может быть перемещён ниже
+    
+        const updatedDays = [...data.days];
+        [updatedDays[index], updatedDays[index + 1]] = [updatedDays[index + 1], updatedDays[index]]; // Меняем местами
+    
+        const updatedData = { ...data, days: updatedDays };
+        localStorage.setItem("data", JSON.stringify(updatedData));
+        setData(updatedData);
+    };
+
     // Рендеринг форм для каждого элемента
     const forms = (data.days || []).map((item, index) => (
-        <ItemForm
-            key={index}
-            index={index}
-            day={item.day}
-            sum={item.sum}
-        />
+        <div key={index} className="day-item">
+            <ItemForm
+                key={index}
+                index={index}
+                day={item.day}
+                sum={item.sum}
+            />
+            <button onClick={() => moveDayUp(index)}>Вверх</button>
+            <button onClick={() => moveDayDown(index)}>Вниз</button>
+        </div>
     ));
 
     return (
