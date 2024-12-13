@@ -8,10 +8,10 @@
     margin: 0 30px;
 }
 .phone-header .time {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 600;
     color: #fff;
-    margin-left: -10px;
+    margin-left: 30px;
 }
 .phone-header .icons {
     display: flex;
@@ -22,31 +22,33 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 12px;
-    width: 30px;
-    border: 1px solid #868686;
-    border-radius: 5px;
-    padding: 3px;
+    height: 23px;
+    width: 45px;
+    background: gray;
+    /* border: 1px solid #868686; */
+    border-radius: 8px;
+    /* padding: 3px; */
     margin-top: 20px;
     margin-left: 20px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-right: -30px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .battery::before {
     content: '';
     position: absolute;
-    height: 7px;
-    width: 3px;
+    height: 6px;
+    width: 2px;
     background: #868686;
-    left: 36px;
+    left: 47px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 0 3px 3px 0;
 }
 .part {
-    border-radius: 3px;
-    height: 13px;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 23px;
     width: 50%;
 }
 .red {
@@ -61,23 +63,23 @@
 .signal {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
     margin-right: 0px;
 }
 .signal1 {
-    height: 9px;
+    height: 10px;
     width: 6px;
 }
 .signal2 {
-    height: 14px;
+    height: 15px;
     width: 6px;
 }
 .signal3 {
-    height: 18px;
+    height: 19px;
     width: 6px;
 }
 .signal4 {
-    height: 22px;
+    height: 23px;
     width: 6px;
 }
 .signal-item {
@@ -107,23 +109,23 @@
 .wv3 {
     width: 42px;
     height: 40px;
-    margin-top: 3px;
-    border-top-color: #fff; /* Устанавливаем цвет для этой волны */
+    margin-top: 6px;
+    border-top-color: rgb(255, 255, 255); /* Устанавливаем цвет для этой волны */
 }
 
 .wv2 {
     width: 25px;
     height: 30px;
     margin-top: -40px;
-    border-top-color: #fff; /* Устанавливаем другой цвет */
+    border-top-color: rgb(255, 255, 255); /* Устанавливаем другой цвет */
 }
 
 .wv1 {
     width: 7px;
     height: 7px;
-    margin-top: -30px;
+    margin-top: -31px;
     border: 1px solid #fff;
-    background: #ffffff;
+    background: #fff;
     border-radius: 100%;
 }
 
