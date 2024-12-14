@@ -1,7 +1,7 @@
 import "./PhoneHeader.css";
 
 export const PhoneHeader = (props) => {
-    const {time, color, batteryStyles, com, wifi} = props;
+    const {time, color, batteryStyles, com, wifi, battery} = props;
     let signal1, signal2, signal3, signal4;
 
     console.log(com);
@@ -31,6 +31,11 @@ export const PhoneHeader = (props) => {
     } else if (wifi == 3) {
     }
 
+    let radiusClassName = "";
+    if (battery == 100) {
+        radiusClassName = "radius";
+    }
+
     return (
         <div className="phone-header">
             <div className="time">{time}</div>
@@ -49,7 +54,8 @@ export const PhoneHeader = (props) => {
                     <div className={"wv1 wave "}></div>
                 </div>
                 <div className="battery">
-                    <div className={"part " + color} style={batteryStyles}></div>
+                    <span>{battery}</span>
+                    <div className={"part " + color + " " + radiusClassName} style={batteryStyles}></div>
                 </div>
             </div>
         </div>

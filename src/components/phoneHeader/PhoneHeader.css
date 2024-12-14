@@ -132,3 +132,18 @@
 .none {
     border-top-color: #383838;
 }
+.radius {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.battery span {
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
