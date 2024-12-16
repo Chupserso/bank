@@ -52,13 +52,13 @@
     width: 50%;
 }
 .red {
-    background: red;
+    background: #f64e4e;
 }
 .green {
-    background: rgb(43, 239, 148);
+    background: rgb(231, 231, 231);
 }
 .orange {
-    background: orange;
+    background: rgb(231, 231, 231);
 }
 .signal {
     display: flex;
@@ -109,7 +109,7 @@
 .wv3 {
     width: 42px;
     height: 40px;
-    margin-top: 6px;
+    margin-top: 5px;
     border-top-color: rgb(255, 255, 255); /* Устанавливаем цвет для этой волны */
 }
 
@@ -123,11 +123,14 @@
 .wv1 {
     width: 7px;
     height: 7px;
-    margin-top: -31px;
-    border: 1px solid #fff;
-    background: #fff;
-    border-radius: 100%;
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 9px solid #fff;
+    margin-top: -30px;
 }
+
 
 .none {
     border-top-color: #383838;
