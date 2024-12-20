@@ -13,6 +13,7 @@ import avitoImg from "../../images/avito_icon.svg";
 import yandexImg from "../../images/yandex_icon.svg";
 import yandexGoImg from "../../images/yandex.go_icon.svg";
 import chyzhykImg from "../../images/chyzhyk_icon.svg";
+import doneImg from "../../images/done.png";
 
 
 const images = [
@@ -29,6 +30,7 @@ const images = [
     { name: "Avito", src: avitoImg },
     { name: "Chyzhyk", src: chyzhykImg },
     { name: "Yandex Go", src: yandexGoImg },
+    { name: "Done", src: doneImg },
 ];
 
 export const Form = (props) => {
