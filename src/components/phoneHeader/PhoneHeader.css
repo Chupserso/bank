@@ -22,13 +22,13 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 21px;
-    width: 43px;
+    height: 20px;
+    width: 38px;
     background: gray;
     /* border: 1px solid #868686; */
-    border-radius: 8px;
+    border-radius: 7px;
     /* padding: 3px; */
-    margin-top: 20px;
+    margin-top: 21px;
     margin-left: 20px;
     padding-right: 0px;
     padding-left: 0px;
@@ -39,17 +39,31 @@
     height: 6px;
     width: 2px;
     background: #868686;
-    left: 45px;
+    left: 39px;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 100% 100% 0;
 }
 .part {
-    border-radius: 8px;
+    border-radius: 7px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    height: 21px;
+    height: 20px;
     width: 50%;
+}
+.radius {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}.battery span {
+    position: absolute;
+    left: 50%;
+    top: 53.5%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 .red {
     background: #f64e4e;
@@ -67,20 +81,20 @@
     margin-right: 0px;
 }
 .signal1 {
-    height: 8px;
-    width: 6px;
+    height: 7px;
+    width: 5px;
 }
 .signal2 {
-    height: 13px;
-    width: 6px;
+    height: 11px;
+    width: 5px;
 }
 .signal3 {
-    height: 17px;
-    width: 6px;
+    height: 15px;
+    width: 5px;
 }
 .signal4 {
-    height: 21px;
-    width: 6px;
+    height: 19px;
+    width: 5px;
 }
 .signal-item {
     margin-left: 3px;
@@ -107,28 +121,27 @@
 
 /* Настройка размеров для каждой волны */
 .wv3 {
-    width: 42px;
-    height: 40px;
-    margin-top: 6px;
+    width: 33px;
+    height: 39px;
+    margin-top: 10px;
     border-top-color: rgb(255, 255, 255); /* Устанавливаем цвет для этой волны */
 }
 
 .wv2 {
-    width: 25px;
+    width: 20px;
     height: 30px;
     margin-top: -40px;
     border-top-color: rgb(255, 255, 255); /* Устанавливаем другой цвет */
 }
 
 .wv1 {
-    width: 7px;
-    height: 7px;
+    border: 13px solid transparent;
     width: 0;
 	height: 0;
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-top: 9px solid #fff;
-    margin-top: -30px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #fff;
+    margin-top: -31px;
 }
 
 
